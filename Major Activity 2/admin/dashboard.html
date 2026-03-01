@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0
+"
+    />
+    <title>Admin Dashboard</title>
+  </head>
+
+  <body>
+    <div class="dashboard-container">
+      <h1>Admin Dashboard</h1>
+      <div class="stats">
+        <div class="stat-card">
+          <h2>Total Users</h2>
+          <p>{{ total_users }}</p>
+        </div>
+        <div class="stat-card">
+          <h2>Total Posts</h2>
+          <p>{{ total_posts }}</p>
+        </div>
+        <div class="stat-card">
+          <h2>Total Comments</h2>
+          <p>{{ total_comments }}</p>
+        </div>
+      </div>
+
+      <div class="recent-activity">
+        <h2>Recent Activity</h2>
+        <ul>
+          {% for activity in recent_activities %}
+          <li>{{ activity }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="user-management">
+        <h2>User Management</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for user in users %}
+            <tr>
+              <td>{{ user.id }}</td>
+              <td>{{ user.name }}</td>
+              <td>{{ user.email }}</td>
+              <td><a href="/admin/users/{{ user.id }}/edit">Edit</a></td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
