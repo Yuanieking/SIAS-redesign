@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>accounts</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,37 +19,25 @@
         <form class="row g-3">
           <div class="col-12 text-center">
             <img src="../assets/buksulogo.png" alt="BUKSU Logo" class="logo" />
-            <h4 class="visual">LOGIN</h4>
+            <h4 class="visual1">ACCESS TYPE</h4>
           </div>
 
-          <div class="col-12">
-            <input
-              type="text"
-              class="form-control"
-              id="inputUsername"
-              placeholder="Username"
-              required
-            />
-          </div>
+          <div class="col-12 button-group">
+            <button type="submit" class="btn btn-primary">Administrator</button>
 
-          <div class="col-12">
-            <input
-              type="password"
-              class="form-control"
-              id="inputPassword2"
-              placeholder="Password"
-              required
-            />
-          </div>
+            <button type="submit" class="btn btn-primary">Instructor</button>
 
-          <div class="col-12 text-center">
-            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="submit" class="btn btn-primary">
+              <a href="login.html"> Student</a>
+            </button>
+
+            <button type="submit" class="btn btn-primary">Parent</button>
+
+            <button type="submit" class="btn btn-primary">
+              Apply for Admission
+            </button>
           </div>
         </form>
-
-        <p class="Signin">
-          Don't have an account?&nbsp;<a href="signup.html"> Sign Up</a>
-        </p>
       </div>
     </div>
   </body>

@@ -6,7 +6,7 @@
 
   padding: 40px;
   height: 100%;
-  width: 500px;
+  width: 600px;
   background-color: white;
   border-style: solid;
   border-radius: 10px;
@@ -14,7 +14,7 @@
 }
 
 .login-container {
-  spacing: 20px;
+  padding: 10px;
   border-radius: 10px;
   background-color: #000052;
   display: flex;
@@ -22,14 +22,31 @@
   align-items: center;
   justify-content: center;
   width: 300px;
-  height: 400px;
+  height: 450px;
   box-shadow: 1px 3px 5px #9b9b9b;
 }
 
 .visual {
+  display: block;
+  margin: 0 auto;
+  font-weight: bolder;
   color: white;
+  font-size: xx-large;
 }
 
+.visual {
+  display: block;
+  margin: 0 auto;
+  font-weight: bolder;
+  color: white;
+  font-size: x-large;
+}
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+}
 body {
   margin: 0;
   background-repeat: no-repeat;
@@ -41,4 +58,43 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
+}
+
+.form-control {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn btn-primary mb-3 {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+}
+
+.Signin {
+  color: white;
+  display: flex;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.button-group .btn {
+  width: 200px;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+button a:hover {
+  color: white;
 }
