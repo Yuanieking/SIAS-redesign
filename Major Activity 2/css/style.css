@@ -1,0 +1,27 @@
+.login {
+  .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: -1110px;
+    padding: 40px;
+
+    background-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+}
+
+body {
+  background-image: url("../assets/BUKIDNON STATE UNIVERSITY(1).png");
+  background-size: cover;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
